@@ -17,8 +17,8 @@
   <body>
     <div class="wrap">
       <nav class="nav">
-        <button class="nav__btn btn_reset">Again</button>
-        <button class="nav__btn btn_reset">Reset Progress</button>
+        <button id="-btn__again" class="nav__btn btn_reset">Again</button>
+        <button id="-btn__reset" class="nav__btn btn_reset">Reset Progress</button>
       </nav>
       <main class="main">
         <header class="header">
@@ -26,21 +26,28 @@
         </header>
         <div class="answer">
           <p class="text__sub">Guess the number</p>
-          <div class="answer__window">?</div>
+          <div id="-answer__window" class="answer__window">?</div>
         </div>
 
         <div class="user-panel">
           <div class="input">
-            <label class="text__sub" for="">Enter Number</label>
-            <input class="input__window btn_reset" type="number" name="" id="" min="0" max="20"/>
+            <label class="text__sub" for="-input__window">Enter Number</label>
+            <input
+              class="input__window btn_reset"
+              type="number"
+              name=""
+              id="-input__window"
+              min="0"
+              max="20"
+            />
           </div>
 
           <button id="-btn__send" class="btn_reset">Send</button>
 
           <div class="info">
-            <p id="score">Score: <span>20</span></p>
-            <p id="highscore">Highscore: <span>0</span></p>
-            <p id="commentary">Commentary: <span>High</span></p>
+            <p id="score">Score: <span id="-score">20</span></p>
+            <p id="highscore">Highscore: <span id="-highscore">0</span></p>
+            <p id="commentary">Commentary: <span id='-comment'>High</span></p>
           </div>
         </div>
       </main>

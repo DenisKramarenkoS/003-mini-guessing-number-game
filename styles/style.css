@@ -35,8 +35,7 @@ body {
   cursor: pointer;
 }
 
-#-btn__send,
-.nav__btn {
+#-btn__send {
   transform-style: preserve-3d;
   background-color: #282828;
   padding-inline: 30px;
@@ -95,6 +94,10 @@ body {
   transform: scale(95%);
 }
 
+.nav__btn:active {
+  transform: scale(0.85);
+}
+
 .nav__btn::before {
   content: "";
   position: absolute;
@@ -142,6 +145,10 @@ body {
   color: #8b8b8b;
 }
 
+.input__window {
+  font-family: inherit;
+}
+
 .user-panel {
   display: flex;
   flex-direction: column;
@@ -179,6 +186,7 @@ body {
 
 .text__sub {
   color: #8b8b8b;
+  cursor: default;
 }
 
 .title__h1 {
